@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout | Chronova</title>
+    <link rel="icon" type="image/png" href="images/chronova-logo.png">
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html">
+        <img src="images/chronova-logo.png" alt="Chronova logo">
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="feature1.html">Features</a>
+        <a href="feature2.html">Technology</a>
+        <a href="feature3.html">Design</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Log In</a>
+        <a href="account.html">My Account</a>
+        <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="checkout">
+
+        <h1>Checkout</h1>
+
+        <div id="checkoutSummary"></div>
+
+        <form id="checkoutForm">
+
+            <label for="customerName">Full Name</label>
+            <input type="text" id="customerName" required>
+
+            <label for="customerEmail">Email Address</label>
+            <input type="email" id="customerEmail" required>
+
+            <label for="customerPhone">Phone Number</label>
+            <input type="tel" id="customerPhone" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" rows="5" required></textarea>
+
+            <label for="payment">Payment Method</label>
+        <select id="payment" required>
+            <option value="">Select Payment Method</option>
+            <option value="card">Card Payment</option>
+            <option value="transfer">Bank Transfer</option>
+            <option value="cash">Cash on Delivery</option>
+        </select>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+        <p id="checkoutMessage"></p>
+
+        <a href="index.html" class="home-button" id="homeButton" style="display: none;">Continue Shopping</a>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 Chronova. All rights reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
